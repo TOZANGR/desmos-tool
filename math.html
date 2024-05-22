@@ -86,14 +86,14 @@
                         latex: "h=" + (kval - (0.1 ** multi))
                     })
                 }
-                if (key.code === "q"){
+                if (k === "q"){
                     
                     calculator.setExpression({
                         id: 'multi',
                         latex: ((multi * 1) - 0.1)
                     })
                 }
-                if (key.code === "a"){
+                if (k === "a"){
                     calculator.setExpression({
                         id: 'multi',
                         latex: ((multi * 1) + 0.1)
