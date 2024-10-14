@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <style>
+
+            .button {
+                font: bold 14px Arial;
+                color:aliceblue;
+                    background: radial-gradient(
+                    circle at top,
+                    white,
+                    yellow,
+                    orange,
+                    red,
+                    darkred,
+                    maroon,
+                    indigo,
+                    black
+                );
+                border-radius: 50%;
+                margin: 50% 50%;
+                height: 160px;
+                width: 160px;
+                border-right: 5px solid black;
+                border-left: 5px solid black;
+                border-bottom: 5px solid black;
+                box-shadow: 
+                    -5px 10px 20px black, 
+                    5px 10px 20px black, 
+                    -5px 20px 30px blue, 
+                    5px 20px 30px blue;
+                }
+                body { 
+                    background: black; 
+                }
+        </style>
+    </head>
+<body>
+
+            <button class="button" onClick="ON()">
+                PRESS FOR ATTENTION
+            </button>
+            <script>
+                var IO = false;
+                var ls = [];
+                function ON(){
+                    IO = true
+                    ls.push(true)
+                    console.log(IO)
+                    IO = false;
+                    console.log(IO)
+                }
+                console.log(IO)
+            </script>
+
+</body>
